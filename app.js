@@ -286,7 +286,7 @@ app.get('/watermark', (req, res) => {
 });
 
 const PDFNetEndpoint = (main, pathname, res) => {
-  PDFNet.runWithCleanup(main, 'pdf_live_Lq4K8X03qLECkdu7w5jRLVqG2lOFu9j8vqps2pSpeEl') // you can add the key to PDFNet.runWithCleanup(main, process.env.PDFTRONKEY)
+  PDFNet.runWithCleanup(main, 'pdf_live_exsXaBHrbprlewN13yDT67SwTBLJdUdg5fCFpvKvloy') // you can add the key to PDFNet.runWithCleanup(main, process.env.PDFTRONKEY)
     .then(() => {
       PDFNet.shutdown();
       fs.readFile(pathname, (err, data) => {
